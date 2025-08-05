@@ -15,5 +15,8 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+vim.api.nvim_create_augroup("jenkinsfile", {})
+
 require "lazy_setup"
 require "polish"
+
